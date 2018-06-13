@@ -1,4 +1,4 @@
-if expand('%:t:r') =~ '_spec$'
+if expand('%:r') =~ '/test/'
   let &l:foldmethod = 'expr'
   let &l:foldexpr   = 'fold_rspec#foldexpr(v:lnum)'
   let &l:foldtext   = 'fold_rspec#foldtext()'
